@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve -o",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
@@ -18,7 +18,14 @@
     "@angular/platform-browser": "^17.0.0",
     "@angular/platform-browser-dynamic": "^17.0.0",
     "@angular/router": "^17.0.0",
+    "@types/chart.js": "^2.9.41",
+    "chart.js": "^4.4.1",
+    "primeflex": "^3.3.1",
+    "primeicons": "^6.0.1",
+    "primeng": "^17.1.0",
     "rxjs": "~7.8.0",
+    "socket.io-client": "^4.7.2",
+    "sweetalert2": "^11.10.1",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.2"
   },

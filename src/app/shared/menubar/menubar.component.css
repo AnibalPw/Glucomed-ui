@@ -1,0 +1,24 @@
+
+.p-menubar{
+  background: #0000004d;
+  backdrop-filter: blur(8px);
+  padding: 0;
+  height: 4rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: calc(100% - var(--scrollbar-width, 0px));
+  z-index: 1100;
+  transition: background-color 1s;
+  border-radius: 0;
+  border: none;
+  padding: 0 4rem;
+}
+
+/* .p-menubar-root-list{
+  background-color: var(--surface-ground);
+}
+
+.p-menuitem-content{
+  background-color: var(--surface-ground);
+} */

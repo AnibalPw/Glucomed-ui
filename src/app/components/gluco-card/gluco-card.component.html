@@ -1,0 +1,76 @@
+<!-- <div class="surface-ground px-4 py-5 md:px-6 lg:px-8"> -->
+<div class="grid">
+
+    <div class="col-12 md:col-6  relative">
+        <div class="surface-card shadow-2 p-3 border-round">
+            <div class="flex justify-content-between mb-3">
+                <div>
+                    <span class="block text-500 font-medium mb-3">Pruebas del mes</span>
+                    <div class="text-900 font-medium text-xl">{{_contadorMes()}}</div>
+                </div>
+                <!-- <div class="flex align-items-center justify-content-center bg-blue-100 border-round" style="width:2.5rem;height:2.5rem">
+                    <i class="pi pi-shopping-cart text-blue-500 text-xl"></i>
+                </div> -->
+            </div>
+            <img src="https://www.primefaces.org/atlantis-ng/assets/demo/images/ecommerce-dashboard/value.svg"
+            class="absolute" style="bottom: 14px; right: 12px;">
+            <span
+            class="font-medium flex justify-content-center align-items-center h-2rem w-5rem border-round p-2 mr-3"
+            style="background-color: #0bd18a;
+            box-shadow: 0px 6px 20px rgba(11, 209, 138, 0.3);
+            color:#fff"
+            >{{_contadorDia()}} hoy </span>
+        </div>
+    </div>
+
+    <div class="col-12 md:col-6  relative">
+      <div class="surface-card shadow-2 p-3 border-round">
+          <div class="flex justify-content-between mb-3">
+              <div>
+                  <span class="block text-500 font-medium mb-3">Última prueba</span>
+                  <div class="text-900 font-medium text-xl">{{_ultimaPrueba().glucosa?.toString()}} mg/dl</div>
+              </div>
+              <!-- <div class="flex align-items-center justify-content-center bg-blue-100 border-round" style="width:2.5rem;height:2.5rem">
+                  <i class="pi pi-shopping-cart text-blue-500 text-xl"></i>
+              </div> -->
+          </div>
+
+          @if(_nivelG === 'alta'){
+            <img src="https://www.primefaces.org/atlantis-ng/assets/demo/images/ecommerce-dashboard/rate.svg"
+            class="absolute" style="bottom: 14px; right: 12px;">
+            <span
+            class="font-medium flex justify-content-center align-items-center h-2rem w-5rem border-round p-2 mr-3"
+            style="background-color: #fc6161; box-shadow: 0px 6px 20px rgba(252, 97, 97, 0.3);
+            color:#fff"
+            >{{_nivelG}}</span>
+          }
+
+
+          @if(_nivelG === 'en rango'){
+            <img src="https://www.primefaces.org/atlantis-ng/assets/demo/images/ecommerce-dashboard/value.svg"
+            class="absolute" style="bottom: 14px; right: 12px;">
+            <span
+            class="font-medium flex justify-content-center align-items-center h-2rem w-6rem border-round p-2 mr-3"
+            style="background-color: #0bd18a;
+            box-shadow: 0px 6px 20px rgba(11, 209, 138, 0.3);
+            color:#fff"
+            >{{_nivelG}}</span>
+          }
+
+
+          @if(_nivelG === 'baja'){
+            <img src="https://www.primefaces.org/atlantis-ng/assets/demo/images/ecommerce-dashboard/quantity.svg"
+            class="absolute" style="bottom: 14px; right: 12px;">
+            <span
+            class="font-medium flex justify-content-center align-items-center h-2rem w-6rem border-round p-2 mr-3"
+            style="background-color: #00d0de; box-shadow: 0px 6px 20px rgba(0, 208, 222, 0.3);
+            color:#fff"
+            >{{_nivelG}}</span>
+          }
+
+      </div>
+  </div>
+
+</div>
+<!-- </div> -->
+

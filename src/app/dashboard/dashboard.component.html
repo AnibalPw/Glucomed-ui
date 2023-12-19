@@ -1,0 +1,31 @@
+
+
+
+<!-- <div class="card">
+
+  <h1>Signals from Node.js</h1>
+  <ul>
+    @for (message of messages(); track idx; let idx = $index, e = $even) {
+      {{ message.data }}: {{ message.payload }}
+    }@empty {
+      <li> There are no items. </li>
+    }
+
+  </ul>
+</div> -->
+
+
+<app-menubar></app-menubar>
+
+<div class="layout-content">
+  <div class="layout-content-inner h-full">
+
+    <app-main-component/>
+    <router-outlet />
+
+  </div>
+</div>
+
+
+
+
